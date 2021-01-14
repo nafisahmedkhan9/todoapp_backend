@@ -1,0 +1,15 @@
+create virtualenv for python 3
+virtualenv <end-folder-name>
+
+activate environment and install all dependencies
+pip install -r requirements.txt
+
+create database and user in mysql 
+database commands available in database-commands.txt file in same project
+
+after that run django command to migrate database 
+python manage.py makemigrations
+python manage.py migrate
+
+run project
+python manage.py runserver

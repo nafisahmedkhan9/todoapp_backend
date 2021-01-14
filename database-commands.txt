@@ -1,0 +1,14 @@
+mysql -u root -p and enter 
+Command asks for a password. Write password and enter to open mysql command
+
+CREATE database todo_db;
+Create database
+
+CREATE USER 'todo_user'@'localhost' IDENTIFIED BY 'todo@123';
+Create user with password
+
+GRANT ALL PRIVILEGES ON *.* TO 'todo_user'@'localhost' WITH GRANT OPTION;
+Give all privileges to user 
+
+FLUSH PRIVILEGES;
+Flush privileges refresh the tables
